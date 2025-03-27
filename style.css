@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+h1 {
+    margin: 0;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
+.color2 {
+    color: #FFFFFF;
+}
+
 .color1 {
     color: #FF5400;
+}
+
+.rem1{
+    font-size: 1rem;
 }
 
 .navbar {
@@ -43,11 +55,101 @@ body {
     
 .nav-links li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 18px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #131313;
     font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #131313;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.header-content {
+    height: 500px;
+    width: 1170px;
+    margin: 50px auto;
+    background: linear-gradient( rgba(19, 19, 24, 0), rgba(19, 19, 24, 1)), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    height: 290px;
+    width: 800px;
+}
+
+.header-writing {
+    margin-bottom: 48px;
+    width: 650px;
+    height: 156px;
+    margin: 0 auto 48px auto;
+}
+
+.header-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    align-items: center;
+    height: 84px;
+    width: 800px;
+}
+
+input {
+    padding-left: 15px;
+}
+
+.inp  {
+    height: 52px;
+    width: 174px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn {
+    height: 52px;
+    width:  174px;
+    color: #FFFFFF;
+    background: #FF5400;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen  and (max-width: 576px) {
+    .nav-links{
+        position: absolute;
+        display: none;
+    }    
+    #menu-toggle:checked + .nav-links {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
 }
