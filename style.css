@@ -47,6 +47,10 @@ body {
     font-weight: 700;
 }
 
+.mbottom {
+    margin-bottom: 20px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -175,15 +179,27 @@ input {
 
 .popular-tour {
     display: flex;
-    justify-content: space-around;
-    margin: 100px auto;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    margin: 150px auto;
 }
 
 .popular-content{
-    height: 750px;
+    /* height: 750px; */
     width: 580px;
-    font-size: 1rem;
+    /* margin-top: 120px; */
 }
+
+.popular-list {
+    /* text-align: left; */
+    display: inline-block;
+    margin: 10px auto;
+    left: 20px;
+    /* list-style: none; */
+    padding: 10px;
+}
+
 
 /* destination */
 
@@ -402,18 +418,27 @@ input {
         font-size: 1.2rem;
         margin: 10px 0;
     }
-    .join-btn {
+
+    .center-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #join-btn{
         background: #ffcc00;
         color: black;
         font-size: 1.2rem;
-        padding: 12px 20px;
+        /* padding: 12px 20px; */
+        padding: 0 auto;
         border-radius: 5px;
         text-decoration: none;
         font-weight: bold;
         transition: 0.3s;
     }
-    .join-btn:hover {
-        background: #ff9900;
+
+    #join-btn:hover {
+        background: #f2f2f2;
     }
 
 /* community slider */
@@ -535,9 +560,10 @@ input#img-5:checked ~ .nav-dots label#img-dot-5 {
 
 .get-lost {
     display: flex;
-    justify-content: space-around;
-    margin: 100px auto;
+    justify-content: center;
+    gap: 60px;
     align-items: center;
+    margin: 150px auto;
 }
 
 
