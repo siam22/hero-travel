@@ -10,6 +10,7 @@ body {
   font-style: normal;
 }
 
+
 .color2 {
     color: #FFFFFF;
 }
@@ -20,6 +21,30 @@ body {
 
 .rem1{
     font-size: 1rem;
+}
+
+.rem2{
+    font-size: 1.25rem;
+}
+
+.rem3{
+    font-size: 1.5rem;
+}
+
+.rem4  {
+    font-size: 2.5rem;
+}
+
+.rem5{
+    font-size: 2rem;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .navbar {
@@ -138,6 +163,7 @@ input {
     border: none;
     border-radius: 8px;
     font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
     display: flex;
     gap: 12px;
@@ -252,10 +278,12 @@ input {
 .deals-content {
     background: url('Images/Group\ 39.png');
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    width: 1170px;
-    height: 500px;
+    width: 1300px;
+    height: 600px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .perks {
@@ -264,8 +292,9 @@ input {
     width: 580px;
     height: 320px;
     border-radius: 9px;
-    /* padding: 50px 77px 50px 50px; */
-    left: 90px;
+    padding: 30px;
+    left: 620px;
+    top: 110px;
 }
 
 .perk-detail {
@@ -275,15 +304,62 @@ input {
     align-items: center;
 }
 
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 240px;
+    height: 62px;
+}
+
 /* community */
 
 .community{
     margin-top: 60px;
-    display: flex;
+    margin-bottom: 100px;
+    /* display: flex; */
     justify-content: center;
     align-self: start;
-    gap: 100px;
+    /* gap: 100px; */
 }
+
+/* community text */
+
+   .container {
+        max-width: 700px;
+        margin: 0 auto 50px auto;
+        background: orange;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .community-benefits{
+        text-align: left;
+        display: inline-block;
+        margin: 20px auto;
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    .join-btn {
+        background: #ffcc00;
+        color: black;
+        font-size: 1.2rem;
+        padding: 12px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .join-btn:hover {
+        background: #ff9900;
+    }
 
 /* community slider */
 
@@ -398,6 +474,20 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5 {
     background: rgba(200, 200, 200, 0.8);
 }
+
+
+/* get lost */
+
+.get-lost {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    align-items: center;
+}
+
+
+
+
 
 @media screen  and (max-width: 576px) {
     .nav-links{
