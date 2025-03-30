@@ -200,6 +200,10 @@ input {
     padding: 10px;
 }
 
+.popular-img img {
+    width: 100%;
+}
+
 
 /* destination */
 
@@ -369,6 +373,7 @@ input {
 
 .perk-detail {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     /* justify-content: center; */
     align-items: center;
@@ -443,12 +448,31 @@ input {
 
 /* community slider */
 
+.community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
 
+.community-img {
+    flex: 1 1 50%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    flex: 1 1 50%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 100%;
+    height: 430px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -460,6 +484,9 @@ input {
 
 .slide-container { 
     display: block; 
+    width:  100%;
+    height: auto;
+    position: relative;
 }
 
 .slide {
@@ -516,6 +543,7 @@ input {
 input:checked + .slide-container  .slide {
     opacity: 1;
     transition: opacity 1s ease-in-out;
+    /* z-index: 1; */
 }
 
 input:checked + .slide-container .nav label { 
@@ -526,7 +554,9 @@ input:checked + .slide-container .nav label {
 	width: 100%;
 	bottom: 9px;
 	height: 11px;
-	display: block;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	position: absolute;
 	text-align: center;
 }
@@ -654,6 +684,146 @@ a{
     transition: all ease 0.3s;
   }
 
+  /* signup */
+
+  .newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    gap: 40px;
+  }
+
+  .signup {
+    width: 480px;
+    height: 370px;
+    border: 1px solid #FF5400;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hr {
+    width: 80%;
+    opacity: 0.3;
+    margin: 20px auto;
+  }
+
+
+  #join-button {
+    background: #43c59e;
+    color: black;
+    font-size: 1.2rem;
+    padding: 12px 20px; /* Add padding for better button size */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px; /* Add spacing above the button */
+    display: inline-block; /* Ensure the button behaves like a block element */
+}
+
+#join-button:hover {
+    /* background: #3dfaff; */
+    background: #d5896f;
+}
+
+
+  .sign {
+    display: block;
+    width: 392px;
+    height: 52px;
+    margin: 24px auto 20px auto;
+    border-radius: 8px;
+    background: #f2f2f2;
+    border: none;
+  }
+
+.cta img {
+    width: 100%;
+    position: relative;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angled {
+    text-align: center;
+    border-radius: 16px;
+    background: #FF5400;
+    color: white;
+    width: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    /* left: 350px; */
+    /* top: -160px; */
+    top: 130px;
+    right: 260px;
+    transform: rotate(-26deg);
+}
+
+/* footer */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 20px auto;
+    width: 40%;
+}
+
+#footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#footer-logo h2 {
+    font-size: 1.8rem;
+    /* margin: 0; */
+}
+
+#footer-logo img {
+    width: 40px;
+    height: 47px;
+    margin-right: 5px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links i {
+    font-size: 25px;
+}
+
+.line {
+    width: 40%;
+    margin: 40px auto;
+    color: rgba(19, 19, 24, 0.1);
+    opacity: 0.3;
+}
+
+
 @media screen  and (max-width: 576px) {
     .nav-links{
         position: absolute;
@@ -694,11 +864,95 @@ a{
         height: 52px;
         width: 255px;
     }
+
+    .choose {
+        height: 113px;
+        width: 310px;
+    }
+
     .box-top{
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
     .reviews{
         margin-top: 10px;
+    }
+
+    .img-container1, .img-container2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .popular-tour, .get-lost, .community, .newsletter{
+        flex-direction: column;
+    }
+    .popular-content{
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .community-img, .comtainer{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .slides{
+        width: 100%;
+        height: auto;
+    }
+
+    .slide{
+        width: 100%;
+        height: auto;
+    }
+
+    .slide img{
+        width: 100%;
+        height: auto;
+    }
+    .nav-dots .nav-dot {
+        width: 8px;
+        height: 8px;
+    }
+    .nav label {
+        display: block;
+    }
+    .lost-img  img {
+        width: 100%;
+    }
+    .lost-img p{
+        font-size: 1.25rem;
+    }
+
+    .deals-content {
+        width: 100%;
+        height: 500px;
+    }
+    .perks {
+        width: 80%;
+        height: 350px;
+        padding: 20px;
+        left: 20px;
+        top: 80px;
+    }
+    .perks p, h2, h5{
+        font-size: 1rem;
+        margin: 15px;
+        /* font-weight: 700; */
+    }
+
+    .signup {
+        width: 90%;
+        padding: 20px;
+    }
+    .sign{
+        width: 100%;
+        height: 480x;
+    }
+    .angled {
+        width: 300px; /* Further reduce width for very small screens */
+        height: 70px; /* Further reduce height */
+        top: 80px; /* Adjust vertical position */
+        right: 0; /* Center horizontally */
+        transform: rotate(-15deg); /* Further reduce rotation */
+
     }
 }
